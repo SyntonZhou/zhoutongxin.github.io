@@ -19,32 +19,29 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>This is<br />
-						Massively</h1>
-						<p>A free, fully responsive HTML5 + CSS3 site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
-						and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p>
+						<h1>Welcome to<br />
+						Zhou Tongxin's Website</h1>
+						<p>A showcase of my Academic Journey, Research Projects, Skills and Interests</a>.</p>
 						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+							<li><a href="index_zh.html" class="button icon solid solo fa-language scrolly">Chinese Page</a></li>
 						</ul>
 					</div>
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
+						<a href="index.html" class="logo">Zhou Tongxin</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">This is Massively</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
+							<li class="active"><a href="index.html">Personal Information</a></li>
+							<li><a href="generic.html">Honors & Awards</a></li>
+							<li><a href="elements.html">Research Experiences</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="zhoutx8@mail2.sysu.edu.cn" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://github.com/SyntonZhou" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 
@@ -54,16 +51,50 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h2><a href="#">And this is a<br />
-									massive headline</a></h2>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<span class="date">December 6, 2024</span>
+									<h2><a href="#">Here is<br />
+									About Me</a></h2>
+									<p>I am Tongxin Zhou, a young individual passionate about technology and innovation.<br />
+									Focused on large models, AI, and hardware acceleration technologies.<br />
+									Looking forward to combining theory with practice to advance smart manufacturing and automation.</p>
 								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+								<a href="#" class="image main">
+									<img id="personalImage" src="images/Personal01.jpg" alt="" />
+								  </a>
+								  
+								  <style>
+									/* 让图片默认不透明度为 1 */
+									#personalImage {
+									  transition: opacity 1s ease-in-out; /* 添加渐变过渡效果 */
+									  opacity: 1;
+									}
+								  </style>
+								  
+								  <script>
+									// 图片的路径
+									const images = ["images/Personal01.jpg", "images/Personal02.jpg"];
+									let currentIndex = 0;
+								  
+									// 设置每隔5秒切换图片，添加渐变效果
+									setInterval(() => {
+									  const imgElement = document.getElementById("personalImage");
+								  
+									  // 先将当前图片的透明度设置为 0，触发渐变效果
+									  imgElement.style.opacity = 0;
+								  
+									  // 等待透明度变为 0 后切换图片
+									  setTimeout(() => {
+										currentIndex = (currentIndex + 1) % images.length; // 切换索引
+										imgElement.src = images[currentIndex]; // 更新图片源
+								  
+										// 图片切换后，再将透明度设置为 1，显示新的图片
+										imgElement.style.opacity = 1;
+									  }, 1000); // 等待1秒（与CSS的渐变时间相匹配）
+									}, 5000); // 每隔5000毫秒（即5秒）切换一次图片
+								  </script>								  
+								  
 								<ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
+									<li><a href="assets\Profile.pdf" class="button large">My Profile</a></li>
 								</ul>
 							</article>
 
@@ -163,47 +194,26 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
+							<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdIEJQG2oTB4ZQYMKCN6dBPV8Kp3w3x1RDYSAlmxOClFfAs9g/viewform?embedded=true" width="550" height="600" frameborder="0" marginheight="0" marginwidth="0">正在加载…</iframe>
 						</section>
 						<section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
+								<p>66 Zhongshan University Road, Science Park, Xinhu Street, Guangming District<br />
+								Shenzhen, Guangdong Province, P.R.China.</p>
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
+								<p><a href="#">(+86) 13396210825</a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
+								<p><a href="#">zhoutx8@mail2.sysu.edu.cn</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://github.com/SyntonZhou" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 						</section>
@@ -211,7 +221,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Zhou Tongxin take full responsibility for its authenticity.</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
