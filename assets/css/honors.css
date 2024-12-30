@@ -1,0 +1,42 @@
+#honors {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.award-entry {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.award-entry h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.award-entry p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+.award-entry a {
+    font-size: 1em;
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.award-entry a:hover {
+    text-decoration: underline;
+}
+
+.rotated-image {
+    transform: rotate(-90deg); /* 旋转图片90度 */
+    transition: transform 0.3s ease; /* 让旋转平滑过渡 */
+    max-width: 100%; /* 使图片适应容器宽度 */
+    height: auto; /* 保持图片的纵横比 */
+}
+

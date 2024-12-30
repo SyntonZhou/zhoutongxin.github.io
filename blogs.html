@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZHOU Tongxin's Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/blogs.css">
+    <script src="assets\js\language.js" defer></script>
+    <script src="assets\js\navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="welcome">
+            <h1 id="welcome-message">Welcome to ZHOU Tongxin's website.</h1>
+            <p id="welcome-subtext">Happy to meet you. Have a good day! 🎉</p>
+            <button id="language-toggle" class="language-button">简体中文 🇨🇳</button>
+        </div>
+    </header>
+    <script src="assets\js\language.js"></script>   
+
+    <main>
+        <section class="navigation">
+            <div class="nav-item" data-target="about.html" onclick="navigateTo('about.html')">About Me</div>
+            <div class="nav-item" data-target="honors.html" onclick="navigateTo('honors.html')">Honors & Awards</div>
+            <div class="nav-item" data-target="research.html" onclick="navigateTo('research.html')">Research Experience</div>
+            <div class="nav-item" data-target="blogs.html" onclick="navigateTo('blogs.html')">My Blogs</div>
+        </section>
+    </main>
+    
+        <section id="blog">
+            <div class="blog-container">
+                <!-- 左侧分类栏 -->
+                <div class="blog-sidebar">
+                    <h3>博客分类</h3>
+                    <ul>
+                        <li><a href="#" onclick="filterBlogs('科研经验')">科研经验</a></li>
+                        <li><a href="#" onclick="filterBlogs('趣味经历')">趣味经历</a></li>
+                        <li><a href="#" onclick="filterBlogs('个人成长')">个人成长</a></li>
+                        <li><a href="#" onclick="filterBlogs('心情随笔')">心情随笔</a></li>
+                    </ul>
+                </div>
+    
+                <!-- 右侧博客内容 -->
+            <div class="blog-content">
+                <div class="blog-list">
+                    <!-- 第一篇博客 -->
+                    <div class="blog-item">
+                        <a href="blog1.html">
+                            <img src="assets/img/modelmerging.jpg" alt="Blog 1" class="blog-cover">
+                            <div class="blog-details">
+                                <h4>Model Merging</h4>
+                                <p>Something About Model Merging.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 第二篇博客 -->
+                    <div class="blog-item">
+                        <a href="assets/pdf/int8inference.pdf">
+                            <img src="assets/img/fp8.png" alt="Blog 2" class="blog-cover">
+                            <div class="blog-details">
+                                <h4>fp8</h4>
+                                <p>Nvidia FP8 Quantization.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 第三篇博客 -->
+                    <div class="blog-item">
+                        <a href="https://mp.weixin.qq.com/s/ikl9a8qkDwL5_e79tSHEWQ">
+                            <img src="assets/img/concert.jpg" alt="Blog 3" class="blog-cover">
+                            <div class="blog-details">
+                                <h4>“芯”动音乐晚会</h4>
+                                <p>我和小伙伴们从零开始办的系列活动记录。</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+                        <!-- 更多博客内容可以继续添加 -->
+                    </div>
+    
+                    <!-- 分页按钮 -->
+                    <div class="pagination">
+                        <button onclick="goToPage(1)">1</button>
+                        <button onclick="goToPage(2)">2</button>
+                        <button onclick="goToPage(3)">3</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <script>
+            // 示例分页函数
+            function goToPage(pageNum) {
+                console.log('跳转到第 ' + pageNum + ' 页');
+            }
+    
+            // 博客分类筛选
+            function filterBlogs(category) {
+                alert('你选择了分类: ' + category);
+            }
+        </script>
+    
+    <footer>
+        <div class="contact">
+            <div class="contact-left">
+                <h3>Contact Information</h3>
+                <p>Telephone: (+86) 13396210825</p>
+                <p>Wechat: 13396210825</p>
+                <p>Address: School of Integrated Circuit, 2nd Floor East, Science Park,
+                    Sun Yat-sen University Shenzhen Campus,
+                    No. 66 Gongchang Road, Xinhui Street,
+                    Guangming District, Shenzhen, 518107, P.R.China.</p>
+                <p>Email: <a href="mailto:zhoutx8@mail2.sysu.edu.cn">zhoutx8@mail2.sysu.edu.cn</a></p>
+                <p>
+                    <a href="https://github.com/SyntonZhou" target="_blank">
+                        <img src="assets/icons/github-icon.png" alt="GitHub">
+                    </a>
+                    <a href="https://space.bilibili.com/7573313?spm_id_from=333.1007.0.0" target="_blank">
+                        <img src="assets/icons/bilibili-icon.png" alt="Bilibili">
+                    </a>
+                </p>
+            </div>
+            <div class="contact-right">
+                <h3>Leave a Message</h3>
+                <form action="#" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>Looking forward to collaboration. I hereby declare that the information provided is true and accurate. I take full responsibility for its authenticity.</p>
+        </div>
+    
+        <div class="copyright">
+            <p>© Copyright. Zhou Tongxin.</p>
+        </div>
+    </footer>
+        
+
+</body>
+</html>

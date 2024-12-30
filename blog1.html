@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZHOU Tongxin's Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/blogs.css">
+    <script src="assets\js\language.js" defer></script>
+    <script src="assets\js\navigation.js" defer></script>
+</head>
+
+<body>
+    <section id="blog-detail">
+        <div class="blog-detail-container">
+            <div class="blog-header">
+                <h1 id="blog-title">科研经验分享</h1>
+                <p id="blog-date">2024年1月1日</p>
+            </div>
+
+            <div class="blog-content">
+                <p>这篇博客将分享我在科研过程中学到的经验，如何有效地进行文献调研和数据分析。...</p>
+                <p>在科研过程中，如何高效地查阅和整理文献？如何构建实验流程并进行数据分析？这些都是我在实验室中积累的宝贵经验。我会在这篇博客中详细讲述这些方法...</p>
+
+                <!-- 文章内容部分 -->
+                <h2>第一部分：文献调研</h2>
+                <p>进行科研工作的第一步通常是文献调研。如何选择合适的文献资源，如何使用数据库进行检索...</p>
+                <h2>第二部分：实验设计</h2>
+                <p>在设计实验时，需要考虑如何设计控制组、实验组的对比，以及数据采集方式...</p>
+            </div>
+
+            <div class="blog-footer">
+                <h4>证明材料</h4>
+                <a href="assets/proof-image.jpg" target="_blank">
+                    <img src="assets/proof-image.jpg" alt="证明材料" class="proof-image">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // 动态加载博客内容
+        window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const blogId = urlParams.get('blog');
+            
+            // 根据blogId动态加载博客标题、日期和内容
+            if (blogId === "1") {
+                document.getElementById('blog-title').innerText = "科研经验分享";
+                document.getElementById('blog-date').innerText = "2024年1月1日";
+                document.querySelector('.blog-content').innerHTML = `<p>这篇博客将分享我在科研过程中学到的经验，如何有效地进行文献调研和数据分析...</p>`;
+            } else if (blogId === "2") {
+                document.getElementById('blog-title').innerText = "趣味经历分享";
+                document.getElementById('blog-date').innerText = "2024年2月15日";
+                document.querySelector('.blog-content').innerHTML = `<p>这篇博客记录了我参与集成电路比赛时的一些趣事，如何在紧张的比赛中保持冷静...</p>`;
+            }
+            // 继续为其他博客添加类似逻辑
+        };
+    </script>
+</body>

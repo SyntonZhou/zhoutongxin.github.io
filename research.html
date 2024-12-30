@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZHOU Tongxin's Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/research.css">
+    <script src="assets\js\language.js" defer></script>
+    <script src="assets\js\navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="welcome">
+            <h1 id="welcome-message">Welcome to ZHOU Tongxin's website.</h1>
+            <p id="welcome-subtext">Happy to meet you. Have a good day! 🎉</p>
+            <button id="language-toggle" class="language-button">简体中文 🇨🇳</button>
+        </div>
+    </header>
+    <script src="assets\js\language.js"></script>   
+
+    <main>
+        <section class="navigation">
+            <div class="nav-item" data-target="about.html" onclick="navigateTo('about.html')">About Me</div>
+            <div class="nav-item" data-target="honors.html" onclick="navigateTo('honors.html')">Honors & Awards</div>
+            <div class="nav-item" data-target="research.html" onclick="navigateTo('research.html')">Research Experience</div>
+            <div class="nav-item" data-target="blogs.html" onclick="navigateTo('blogs.html')">My Blogs</div>
+        </section>
+    </main>
+    
+        <section id="research-experience">
+            <h2>科研经历</h2>
+    
+            <div class="project-entry">
+                <h3>基于参数融合的中文大语言模型构建与优化研究（本科毕业设计）</h3>
+                <p><strong>项目概况：</strong>大语言模型（LLM）的参数融合已经发展成为一种高效的模型构建方法，寻求中文大语言模型的融合成果。</p>
+                <p><strong>主要工作：</strong>在导师的指导下，负责实施模型融合实验，独立进行性能评估与优化策略的迭代。</p>
+                <p><strong>研究成果：</strong>目前已经完成多组模型的融合测试，正在逐步优化模型性能。</p>
+                <p><strong>证明材料：</strong><a href="assets\pdf\graduation.pdf" target="_blank">查看开题报告</a></p>
+            </div>
+    
+            <div class="project-entry">
+                <h3>LAV: 基于LoongArch架构的R-MSFM模型专用加速器设计（第八届全国大学生集成电路创新创业大赛）</h3>
+                <p><strong>项目概况：</strong>基于龙芯架构提出了一个面向专用神经网络高度定制化的视觉网络模型推理加速器硬件架构（LA-Vision）。</p>
+                <p><strong>主要工作：</strong>承担代码实现、电路设计与仿真验证工作，主导板卡调试与现场展示。</p>
+                <p><strong>研究成果：</strong>通过华南赛区初筛，在现场展示后获得第八届全国大学生集成电路创新创业大赛华南赛区二等奖。</p>
+                <p><strong>证明材料：</strong><a href="assets\pdf\inte.pdf" target="_blank">查看技术文档</a></p>
+            </div>
+    
+            <div class="project-entry">
+                <h3>面向机器人视觉系统的深度估计硬件处理器设计（大学生创新训练项目）</h3>
+                <p><strong>项目概况：</strong>面向机器人视觉应用，基于FPGA设计适用于搭载机器学习单目深度估计算法的硬件处理器。</p>
+                <p><strong>主要工作：</strong>模型的量化策略测试与选定、硬件加速方案设计等。</p>
+                <p><strong>研究成果：</strong>成功构建多层深度估计硬件处理器，致力于实时数据处理实现边端实时深度估计，获评优秀结项。</p>
+                <p><strong>证明材料：</strong><a href="assets\pdf\bigproject2.pdf" target="_blank">查看开题报告</a></p>
+            </div>
+    
+            <div class="project-entry">
+                <h3>运动目标控制与追踪系统（全国大学生电子设计竞赛）</h3>
+                <p><strong>项目概况：</strong>2023年中国大学生电子设计竞赛E题，设计一个系统，通过按键控制实现复位、绕线、循迹、追踪等功能。</p>
+                <p><strong>主要工作：</strong>负责系统程序开发、电路设计与测试。</p>
+                <p><strong>研究成果：</strong>通过不同的按键操作可以实现题目所要求的功能。装置在赛区会场进行测试，与报告共同获得广东赛区二等奖。</p>
+                <p><strong>证明材料：</strong><a href="assets\pdf\elect.pdf" target="_blank">查看技术文档</a></p>
+            </div>
+    
+            <div class="project-entry">
+                <h3>基于K-均值聚类的古代玻璃制品化学成分分析模型（全国大学生数学建模竞赛）</h3>
+                <p><strong>项目概况：</strong>2022全国大学生数学建模竞赛C题，要求通过建模分析与古代玻璃化学成分相关的数据。</p>
+                <p><strong>主要工作：</strong>担任项目组长，负责建模原理研究、算法实现。</p>
+                <p><strong>研究成果：</strong>解决赛题中所提出的化学成分分析问题，与报告共同获得广东省二等奖。</p>
+                <p><strong>证明材料：</strong><a href="assets\pdf\math.pdf" target="_blank">查看解题文档</a></p>
+            </div>
+    
+            <div class="project-entry">
+                <h3>面向MEMS电容式加速度计的低功耗高分辨率Delta-Sigma型调制器（大学生创新训练项目）</h3>
+                <p><strong>项目概况：</strong>2022年完成题目，研究满足MEMS电容式精度要求且功耗为微瓦级的Delta-Sigma技术。</p>
+                <p><strong>主要工作：</strong>作为项目负责人，主导参数建模、电路设计与优化，以及撰写结项报告并进行答辩。</p>
+                <p><strong>研究成果：</strong>题目结项为合格，最终调制器有效位数16比特，功耗为1.67微瓦，量化信噪比101分贝，具备一定的应用价值。</p>
+                <p><strong>证明材料：</strong><a href="assets\pdf\bigproject.pdf" target="_blank">查看结题报告</a></p>
+            </div>
+    
+        </section>
+    
+        
+
+    <footer>
+        <div class="contact">
+            <div class="contact-left">
+                <h3>Contact Information</h3>
+                <p>Telephone: (+86) 13396210825</p>
+                <p>Wechat: 13396210825</p>
+                <p>Address: School of Integrated Circuit, 2nd Floor East, Science Park,
+                    Sun Yat-sen University Shenzhen Campus,
+                    No. 66 Gongchang Road, Xinhui Street,
+                    Guangming District, Shenzhen, 518107, P.R.China.</p>
+                <p>Email: <a href="mailto:zhoutx8@mail2.sysu.edu.cn">zhoutx8@mail2.sysu.edu.cn</a></p>
+                <p>
+                    <a href="https://github.com/SyntonZhou" target="_blank">
+                        <img src="assets/icons/github-icon.png" alt="GitHub">
+                    </a>
+                    <a href="https://space.bilibili.com/7573313?spm_id_from=333.1007.0.0" target="_blank">
+                        <img src="assets/icons/bilibili-icon.png" alt="Bilibili">
+                    </a>
+                </p>
+            </div>
+            <div class="contact-right">
+                <h3>Leave a Message</h3>
+                <form action="#" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>Looking forward to collaboration. I hereby declare that the information provided is true and accurate. I take full responsibility for its authenticity.</p>
+        </div>
+    
+        <div class="copyright">
+            <p>© Copyright. Zhou Tongxin.</p>
+        </div>
+    </footer>
+        
+
+</body>
+</html>

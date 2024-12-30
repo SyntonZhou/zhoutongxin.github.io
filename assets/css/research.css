@@ -1,0 +1,34 @@
+#research-experience {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.project-entry {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.project-entry h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-entry p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+.project-entry a {
+    font-size: 1em;
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.project-entry a:hover {
+    text-decoration: underline;
+}

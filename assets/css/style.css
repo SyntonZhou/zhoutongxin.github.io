@@ -1,0 +1,370 @@
+@font-face {
+    font-family: "思源宋体 Heavy";
+    src: url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&display=swap") format("truetype");
+}
+
+body {
+    font-family: "Times New Roman", "微软雅黑", sans-serif; /* 设置默认字体 */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    height: 100vh;
+    background: url('assets/img/welcomebg.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-family: "思源宋体 Heavy", "Times New Roman", serif; /* 使用思源宋体 Heavy */
+    color: transparent;
+    background: url("assets/img/welcomebg.jpg") no-repeat center; /* 背景图片覆盖文字 */
+    background-size: cover;
+    -webkit-background-clip: text; /* 仅文字区域使用背景 */
+    background-clip: text;
+    padding: 0;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-family: "微软雅黑", "Times New Roman", sans-serif; /* 设置中文字体 */
+    font-weight: bold; /* 设置加粗 */
+}
+
+header button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+header button:hover {
+    background: #0056b3;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #f4f4f4;
+    box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background: #007BFF;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.nav-item.active {
+    background-color: #4CAF50; /* 高亮颜色 */
+    color: white;
+}
+
+.nav-item:hover {
+    background: #0056b3;
+}
+
+/* 底部整体设计 */
+footer {
+    background-color: #f8f8f8; /* 更改背景色 */
+    padding: 30px 10%;
+    font-family: Arial, sans-serif;
+}
+
+/* 联系信息栏 */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+/* 左侧联系信息 */
+.contact-left {
+    width: 45%;
+}
+
+.contact-left h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-left p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.contact-left a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.contact-left a:hover {
+    text-decoration: underline;
+}
+
+.contact-left img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* 右侧留言表单 */
+.contact-right {
+    width: 45%;
+}
+
+.contact-right h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-right label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.contact-right input,
+.contact-right textarea {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-right button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-right button:hover {
+    background-color: #0056b3;
+}
+
+/* 底部声明文本居中 */
+.footer-bottom p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* 版权部分 */
+.copyright {
+    text-align: center;
+    font-size: 1rem;
+    color: #999;
+}
+
+
+/* 语言切换按钮样式 */
+.language-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* 漸变背景 */
+    border: none;
+    border-radius: 25px; /* 圆角效果 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 按钮阴影 */
+    cursor: pointer;
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+}
+
+.language-button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* 鼠标悬停时交换颜色 */
+    transform: scale(1.05); /* 鼠标悬停时放大 */
+}
+
+.language-button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 点击时减小阴影 */
+    transform: scale(0.95); /* 点击时缩小 */
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.welcome h1 {
+    font-size: 36px;
+    font-family: "思源宋体 Heavy", "Times New Roman", serif; /* 使用思源宋体 Heavy */
+    color: #333;
+}
+
+.welcome p {
+    font-size: 18px;
+    font-family: "微软雅黑", "Times New Roman", sans-serif;
+    font-weight: bold; /* 设置加粗 */
+    color: #555;
+}
+
+/* 设置基本信息部分的布局 */
+#basic-info {
+    margin: 40px auto;
+    width: 80%; /* 调整宽度 */
+}
+
+#basic-info .section-title {
+    font-size: 2.5rem;
+    font-family: "思源宋体 Heavy", "Times New Roman", serif;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #007BFF; /* 给标题加一个蓝色底边 */
+}
+
+/* flex布局，左侧图片，右侧个人信息 */
+.basic-info-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-photo {
+    width: 250px;  /* 图片宽度 */
+    height: 250px; /* 图片高度 */
+    border-radius: 50%; /* 圆形 */
+    margin-right: 30px; /* 图片和文本间的间距 */
+    object-fit: cover; /* 确保图片不变形 */
+}
+
+.info-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.info-text p {
+    margin: 10px 0;
+}
+
+.info-text strong {
+    color: #007BFF; /* 强调信息标签颜色 */
+}
+
+/* 设置教育经历部分的布局 */
+#education {
+    margin: 40px auto;
+    width: 80%; /* 调整宽度 */
+}
+
+#education .section-title {
+    font-size: 2.5rem;
+    font-family: "思源宋体 Heavy", "Times New Roman", serif;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #007BFF; /* 给标题加一个蓝色底边 */
+}
+
+/* 每个教育经历条目的排版 */
+.education-entry {
+    margin-bottom: 20px;
+}
+
+.education-entry h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.education-entry p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 8px 0;
+}
+
+.education-entry ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.education-entry ul li {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.education-entry strong {
+    color: #007BFF; /* 强调信息标签颜色 */
+}
+
+/* 设置个人技能与工作成果部分的布局 */
+#skills-achievements {
+    margin: 40px auto;
+    width: 80%; /* 调整宽度 */
+}
+
+#skills-achievements .section-title {
+    font-size: 2.5rem;
+    font-family: "思源宋体 Heavy", "Times New Roman", serif;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #007BFF; /* 给标题加一个蓝色底边 */
+}
+
+#skills-achievements .section-content {
+    margin-top: 20px;
+}
+
+#skills-achievements h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#skills-achievements p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 8px 0;
+}
+
+#skills-achievements strong {
+    color: #007BFF; /* 强调信息标签颜色 */
+}

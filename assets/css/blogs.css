@@ -1,0 +1,154 @@
+#blog {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-sidebar {
+    width: 20%;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-sidebar h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.blog-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.blog-sidebar ul li {
+    margin: 10px 0;
+}
+
+.blog-sidebar ul li a {
+    text-decoration: none;
+    color: #1E90FF;
+    font-size: 1em;
+}
+
+.blog-sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.blog-content {
+    width: 75%;
+}
+
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.blog-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.blog-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.blog-item .blog-details {
+    margin-top: 10px;
+}
+
+.blog-item h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.blog-item p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #4682B4;
+}
+
+/* Blog Detail Page */
+#blog-detail .blog-detail-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.blog-detail-container h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.blog-detail-container .blog-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* 设置所有博客封面图片的尺寸 */
+.blog-cover {
+    width: 300px;   /* 固定宽度，适应布局 */
+    height: 200px;  /* 固定高度，保持一致性 */
+    object-fit: cover;  /* 图片裁剪方式，保持图片的纵横比并填满目标区域 */
+    border-radius: 8px;  /* 可选，添加圆角效果 */
+}
+
+/* 可选：添加间距和布局效果 */
+.blog-item {
+    margin-bottom: 20px;  /* 每个博客项之间的间距 */
+}
+
+.blog-details {
+    padding-top: 10px;
+}
+
+.blog-details h4 {
+    font-size: 16px;  /* 设置标题字体大小 */
+    margin-bottom: 5px;  /* 设置标题和描述之间的间距 */
+}
+
+.blog-details p {
+    font-size: 14px;  /* 设置描述字体大小 */
+    color: #666;  /* 设置描述文本颜色 */
+}
